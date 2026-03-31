@@ -53,7 +53,16 @@ Developed as a streamlined, self-contained Next.js application, POCme enables se
 
 For a production-ready environment, you can use the provided Docker configuration.
 
-### Build and Run
+### Option 1: Docker Compose (Recommended)
+
+1.  Make sure you have your `.env.local` file ready with your `GEMINI_API_KEY`.
+2.  Run the application:
+    ```bash
+    docker-compose up --build
+    ```
+    Your app will be available at `http://localhost:3000`.
+
+### Option 2: Docker Image
 
 1.  **Build Image**
     ```bash

@@ -1,0 +1,18 @@
+{
+  "name": "pocme-nextapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@google/genai": "^1.47.0",
+    "dotenv": "16.4.5",
+    "next": "13.5.6",
+    "node-fetch": "2.6.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}

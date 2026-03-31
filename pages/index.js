@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import ReactMarkdown from "react-markdown";
 
 export default function Home() {
   const [cve, setCve] = useState("");
@@ -103,7 +104,9 @@ export default function Home() {
               <p><strong>ID:</strong> {researchData.id}</p>
               <p><strong>CVSS:</strong> {researchData.cvss || "N/A"}</p>
             </div>
-            <p className={styles.description}><strong>Description:</strong> {researchData.description}</p>
+            <div className={styles.description}>
+              <ReactMarkdown>{researchData.description}</ReactMarkdown>
+            </div>
           </div>
         )}
 

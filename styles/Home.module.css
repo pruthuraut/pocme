@@ -119,8 +119,57 @@
 
 .description {
   line-height: 1.6;
-  white-space: pre-wrap;
-  color: #bbb;
+  color: #ccc;
+}
+
+.description h1, .description h2, .description h3 {
+  color: var(--accent);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description p {
+  margin-bottom: 1rem;
+}
+
+.description ul, .description ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.description li {
+  margin-bottom: 0.4rem;
+}
+
+.description code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+.description pre {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.description pre code {
+  background: transparent;
+  padding: 0;
+  display: block;
+}
+
+.description blockquote {
+  border-left: 4px solid var(--accent);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 107, 107, 0.05);
+  font-style: italic;
 }
 
 .footer {
